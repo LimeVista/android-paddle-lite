@@ -61,15 +61,15 @@ def prepare():
 
 def build():
     print('开始构建...')
-    zip_file = f'{TargetFolder}/paddle-{Version}'
-    aar_file = f'{TargetFolder}/paddle-{Version}.aar'
-    pom_file = f'{TargetFolder}/paddle-{Version}.pom'
+    zip_file = f'{TargetFolder}/lite-{Version}'
+    aar_file = f'{TargetFolder}/lite-{Version}.aar'
+    pom_file = f'{TargetFolder}/lite-{Version}.pom'
 
     shutil.make_archive(zip_file, 'zip', OutputFolder)
     shutil.move(f'{zip_file}.zip', aar_file)
 
     shutil.copy('./prefab/paddle-VERSION.pom', pom_file)
-    replace_content(pom_file, 'VER_NAME', VersionCode)
+    replace_content(pom_file, 'VERSION', Version)
 
     create_hash_file(aar_file)
     create_hash_file(pom_file)
