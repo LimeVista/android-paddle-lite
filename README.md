@@ -2,7 +2,7 @@
 用于将预构建 `Paddle Lite` 版本整合
 
 ## 使用要求
-* Android SDK API >= 31
+* Android SDK API >= 21
 * NDK Ver >= 21
 * Android Studio 4.1+
 
