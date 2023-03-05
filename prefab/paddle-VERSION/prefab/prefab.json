@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "paddle",
+  "version": "VERSION",
+  "dependencies": []
+}

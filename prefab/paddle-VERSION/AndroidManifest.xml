@@ -1,0 +1,3 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="me.limeice.paddle.lite" android:versionCode="VER_CODE" android:versionName="VER_NAME">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
+</manifest>
